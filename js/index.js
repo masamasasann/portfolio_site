@@ -6,10 +6,6 @@ bubbly({
   bubbleFunc:() => `hsla(${Math.random() * 50}, 100%, 50%, .3)`
 });
 
-
-
-
-
 $('#page-link a[href*="#"]').click(function () {
   var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
   var pos = $(elmHash).offset().top;  //idの上部の距離を取得
@@ -48,17 +44,28 @@ $(window).on('load', function(){
 
 
 // フッターの波
-jQuery('#footer').raindrops(//指定したエリアに描画
-  {
-    color:'#FFF0E5',//水の色を指定
-    canvasHeight:150, //canvasの高さを指定。初期値は親の高さの50%。
-    waveLength: 100,//波の長さ(広がり)を指定。数値が大きいほど長さは小さくなる。初期値は340。
-    waveHeight:200,//波の高さを指定。数値が大きいほど高さは高くなる。初期値は100。
-    rippleSpeed: 0.05, //波紋のスピードを指定。数値が大きいほど波紋は速くなる。初期値は0.1。
-    density: 0.04,//水の波紋の量を指定。数値が大きいほど波紋は小さくなる。初期値は0.02。
-    frequency:5//雨粒の落ちる頻度を指定。数値が大きいほど頻度は多くなる。初期値は3。
-  }
-);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // モーダルウインドウ
 //テキストを含む一般的なモーダル
@@ -115,7 +122,13 @@ $('#page-top').click(function () {
 
 
 
-
-
-
-
+$(function(){
+	$(".canvas_wrapper").raindrops({
+    color:"#FFEFE5",
+    canvasHeight:200,
+    rippleSpeed: 0.05,
+    density: 0.04,
+    waveHeight: 200,
+    // density: 10,
+});
+});

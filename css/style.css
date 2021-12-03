@@ -11,6 +11,7 @@
       text-align: center;
 }
 
+/* *{outline:1px solid #0000FF} */
 
 /* 下線 */
 /*==================================================
@@ -621,8 +622,6 @@ h4{
   text-transform: uppercase; 
   text-decoration: none;
   font-size:0.6rem;
-    /*背景画像の指定*/
-    /* background: url("https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/8-1-8/img/pagetop_1.png") no-repeat center; */
     background: url("../img/main34.png") no-repeat center;
   background-size: contain;
 }
@@ -630,8 +629,6 @@ h4{
 #page-top.floatAnime a{
   width: 100px;
   height: 130px;
-    /*背景画像の指定*/
-  /* background: url("https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/8-1-8/img/pagetop_2.png") no-repeat center; */
   background: url("../img/main-29.png") no-repeat center;
   background-size: contain;
     /*アニメーションの指定*/
@@ -653,6 +650,32 @@ h4{
     right: 20px;
   color: #666;
 }
+
+
+
+
+/* 波の設定改 */
+/* // divを中央寄せ */
+.wrapper-f {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.canvas_wrapper {
+  /* // サイズの設定 */
+  max-width: 1200px;
+  height: 200px;
+
+  /* // お好みで背景の設定をしてください。 */
+  background:  #fff;
+}
+
+
+
+
+
+
+
 
   /*-----------------------------------------------------*/
   /* タブレット用のCSS */
@@ -1271,8 +1294,6 @@ text-align: center;
     background-color: rgb(255, 255, 255);
     height: 100px;
   }
-
-
 
 
 
